@@ -75,8 +75,8 @@ INSERT INTO DimFuente (TipoFuente, Plataforma) VALUES
 -- Catalogo fijo de sentimiento.
 -- ---------------------------------------------------------------------
 CREATE TABLE DimClasificacion (
-    IdClasificacionKeybTINYINT NOT NULL,
-    ClasificacionbVARCHAR(10) NOT NULL,
+    IdClasificacionKey TINYINT NOT NULL,
+    Clasificacion VARCHAR(10) NOT NULL,
     PRIMARY KEY (IdClasificacionKey),
     UNIQUE KEY uq_dimclasificacion_nombre (Clasificacion)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
